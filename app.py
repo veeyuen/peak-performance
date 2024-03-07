@@ -28,7 +28,7 @@ fig = go.Figure(
     )
 )
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
 
     pyo.plot(fig)
 
