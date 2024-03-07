@@ -1,6 +1,9 @@
 import streamlit as st
 import plotly.graph_objects as go
+import pandas as pd
 import plotly.offline as pyo
+import plotly.express as px
+
 
 #categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
 #categories = [*categories, categories[0]]
