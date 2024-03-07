@@ -34,7 +34,9 @@ fig = go.Figure(
 
 #if __name__ == '__main__':
 
-pyo.plot(fig)
+#pyo.plot(fig)
+st.plotly_chart(fig)
+
 
 
 #def radar_chart(val):
