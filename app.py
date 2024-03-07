@@ -28,9 +28,9 @@ fig = go.Figure(
     )
 )
 
-#if __name__ == '__main__':
-#
-#    pyo.plot(fig)
+if __name__ == '__main__':
+
+    pyo.plot(fig)
 
 
 #def radar_chart(val):
