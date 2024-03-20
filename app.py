@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.offline as pyo
 import plotly.express as px
 import random
+from plotly.subplots import make_subplots
 
 
 categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
