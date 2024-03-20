@@ -9,21 +9,21 @@ import random
 categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
 categories = [*categories, categories[0]]
 
-Day_0 = [0, 5.5, 4, 3, 9.75]
-Day_15 = [-1.9, 5.9, 4, 4, 5, 2]
-Day_3 = [-4.0, 6.4, 7, 6, 0]
-Day_0 = [*Day_0, Day_0[0]]
-Day_15 = [*Day_15, Day_15[0]]
-Day_30 = [*Day_30, Day_30[0]]
+Day_0_1 = [0, 5.5, 4, 3, 9.75]
+Day_15_1 = [-1.9, 5.9, 4, 4, 5, 2]
+Day_3_1 = [-4.0, 6.4, 7, 6, 0]
+Day_0_1 = [*Day_0_1, Day_0_1[0]]
+Day_15_1 = [*Day_15_1, Day_15_1[0]]
+Day_30_1 = [*Day_30_1, Day_30_1[0]]
 
 
 # Simple radar plot
 
 fig1 = go.Figure(
     data=[
-        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
-        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+        go.Scatterpolar(r=Day_0_1, theta=categories, fill='toself', name='Day 0'),
+        go.Scatterpolar(r=Day_15_1, theta=categories, fill='toself', name='Day 15'),
+        go.Scatterpolar(r=Day_30_1, theta=categories, fill='toself', name='Day 30')
     ],
     layout=go.Layout(
         title=go.layout.Title(text='Peak Performance - Recovery'),
