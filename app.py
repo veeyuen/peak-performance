@@ -51,8 +51,7 @@ trace2=[
 data=[trace1, trace2]
 
 
-fig = make_subplots(rows=1, cols=2, specs=[{"type": "barpolar"}, {"type": "barpolar"}],)
-
+fig = make_subplots(rows=1, cols=2, specs=[[{"type": "barpolar"}, {"type": "barpolar"}],)
 fig.add_trace(trace1, row=1, col=1)
 
 fig.add_trace(trace2,row=1, col=2)
