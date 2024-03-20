@@ -35,27 +35,42 @@ Day_30 = [*Day_30, Day_30[0]]
 
 #if __name__ == '__main__':
 
-trace1=[
-        go.Barpolar(r=Day_0, theta=categories, name='Day 0'),
-        go.Barpolar(r=Day_15, theta=categories, name='Day 15'),
-        go.Barpolar(r=Day_30, theta=categories, name='Day 30')
-    ]
-
-trace2=[
-        go.Barpolar(r=Day_0, theta=categories, name='Day 0'),
-        go.Barpolar(r=Day_15, theta=categories, name='Day 15'),
-        go.Barpolar(r=Day_30, theta=categories, name='Day 30')
-    ]
 
 
-data=[trace1, trace2]
+fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1)
 
-
-fig = make_subplots(rows=1, cols=2, specs=[[{"type": "barpolar"}, {"type": "barpolar"}]],)
-fig.add_trace(trace1, row=1, col=1)
-
-fig.add_trace(trace2,row=1, col=2)
-
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
+        r=[5,6,3,8,5],
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
+        r=[3,9,4,5,3]
+    ),
+    row=1,
+    col=1,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
+        r=[5,6,3,8,5],
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
+        r=[3,9,4,5,3]
+    ),
+    row=1,
+    col=2,
+)
 #pyo.plot(fig)
 st.plotly_chart(fig)
 
