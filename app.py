@@ -36,15 +36,15 @@ Day_30 = [*Day_30, Day_30[0]]
 #if __name__ == '__main__':
 
 trace1=[
-        go.Barpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
-        go.Barpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-        go.Barpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+        go.Barpolar(r=Day_0, theta=categories, name='Day 0'),
+        go.Barpolar(r=Day_15, theta=categories, name='Day 15'),
+        go.Barpolar(r=Day_30, theta=categories, name='Day 30')
     ]
 
 trace2=[
-        go.Barpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
-        go.Barpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-        go.Barpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+        go.Barpolar(r=Day_0, theta=categories, name='Day 0'),
+        go.Barpolar(r=Day_15, theta=categories, name='Day 15'),
+        go.Barpolar(r=Day_30, theta=categories, name='Day 30')
     ]
 
 
