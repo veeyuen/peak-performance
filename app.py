@@ -12,9 +12,9 @@ categories = [*categories, categories[0]]
 Day_0_1 = [0, 5.5, 4, 3, 9.75]
 Day_15_1 = [-1.9, 5.9, 4, 4, 5, 2]
 Day_30 = [-4.0, 6.4, 7, 6, 0]
-Day_0_1 = [*Day_0, Day_0[0]]
-Day_15_1 = [*Day_15, Day_15[0]]
-Day_30_1 = [*Day_30, Day_30[0]]
+Day_0_1 = [*Day_0_1, Day_0_1[0]]
+Day_15_1 = [*Day_15_1, Day_15_1[0]]
+Day_30_1 = [*Day_30_1, Day_30_1[0]]
 
 
 # Simple radar plot
