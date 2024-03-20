@@ -17,6 +17,7 @@ Day_0 = [*Day_0, Day_0[0]]
 Day_15 = [*Day_15, Day_15[0]]
 Day_30 = [*Day_30, Day_30[0]]
 
+r1 =[5,6,3,8,5]
 
 # Simple radar plot
 
@@ -42,7 +43,7 @@ fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1)
 fig.add_trace(
     go.Scatterpolar(
         theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
-        r=[5,6,3,8,5],
+        r1,
     ),
     row=1,
     col=1,
