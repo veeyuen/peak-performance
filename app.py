@@ -19,6 +19,21 @@ Day_30_1 = [*Day_30, Day_30[0]]
 
 # Simple radar plot
 
+fig = go.Figure(
+    data=[
+        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
+        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
+        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+    ],
+    layout=go.Layout(
+        title=go.layout.Title(text='Peak Performance - XXXX'),
+        polar={'radialaxis': {'visible': True}},
+        showlegend=True
+    )
+)
+
+
+
 fig1 = go.Figure(
     data=[
         go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
