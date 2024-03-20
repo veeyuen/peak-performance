@@ -35,7 +35,8 @@ Day_30 = [*Day_30, Day_30[0]]
 
 #if __name__ == '__main__':
 
-fig = make_subplots(rows=1, cols=2, specs=[[{"type": "polar"}, {"type": "polar"}]])
+fig = make_subplots(rows=1, cols=2, specs=[[{"type": "barpolar"}, {"type": "barpolar"}],
+           )
 
 fig.add_trace(go.Barpolar(r=Day_0, theta=categories, name='Day 0'),row=1, col=1)
 
