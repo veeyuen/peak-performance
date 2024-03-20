@@ -70,7 +70,7 @@ st.plotly_chart(fig)
 #fig.add_trace(go.Barpolar(r=Day_15, theta=categories, name='Day 15'),row=1, col=2)
 
 #pyo.plot(fig)
-st.plotly_chart(fig)
+#st.plotly_chart(fig)
 
 
 
