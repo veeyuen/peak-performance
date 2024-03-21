@@ -89,6 +89,12 @@ fig.update_layout(
     width=650,
     height=650,
     title_text = 'TEST TITLE',
+
+    font=dict(
+        family="Courier New, monospace",
+        size=18,  # Set the font size here
+        color="RebeccaPurple"
+    ),
     
 polar=dict(
     radialaxis=dict(
