@@ -88,13 +88,20 @@ fig.update_layout(
     minreducedheight=450,
     width=850,
     height=850,
-    title_text = 'PEAK PERFORMANCE',
+#    title_text = 'PEAK PERFORMANCE',
 
     font=dict(
         family="Courier New, monospace",
         size=14,  # Set the font size here
         color="White"
     ),
+
+    title={
+        'text': "Plot Title",
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'},
     
 polar=dict(
     radialaxis=dict(
