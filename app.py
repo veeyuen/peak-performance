@@ -46,7 +46,6 @@ fig.add_trace(
         r=r1,
         fill='toself',
         showlegend='True',
-        legend='TEST',
         name='Day 0',
     ),
     row=1,
@@ -90,6 +89,7 @@ fig.update_layout(
     minreducedheight=450,
     width=650,
     height=650,
+    title_text = 'TEST TITLE',
     
 polar=dict(
     radialaxis=dict(
