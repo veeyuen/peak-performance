@@ -92,8 +92,8 @@ fig.update_layout(
 
     font=dict(
         family="Courier New, monospace",
-        size=18,  # Set the font size here
-        color="RebeccaPurple"
+        size=14,  # Set the font size here
+        color="White"
     ),
     
 polar=dict(
