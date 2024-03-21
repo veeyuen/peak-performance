@@ -73,6 +73,16 @@ fig.add_trace(
     col=2,
 )
 #pyo.plot(fig)
+
+fig.update_layout(
+  polar=dict(
+    radialaxis=dict(
+      visible=True,
+      range=[0, 5]
+    )),
+  showlegend=False
+)
+
 st.plotly_chart(fig)
 
 
