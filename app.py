@@ -115,6 +115,9 @@ polar=dict(
 
 fig.update_xaxes(automargin=True)
 
+fig.update_traces(fill = 'toself', textposition = 'top center')
+
+
 st.plotly_chart(fig)
 
 
