@@ -44,6 +44,7 @@ fig.add_trace(
     go.Scatterpolar(
         theta=["Sleep Quality", "Stress Management", "Mental Health"],
         r=r1,
+        fill='toself',
     ),
     row=1,
     col=1,
@@ -51,7 +52,8 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["Sleep Quality", "Stress Management", "Mental Health"],
-        r=[3,9,4]
+        r=[3,9,4],
+        fill='toself',
     ),
     row=1,
     col=1,
@@ -60,6 +62,7 @@ fig.add_trace(
     go.Scatterpolar(
         theta=["Cognitive Function", "Sick Leave", "Energy Levels"],
         r=[5,6,3],
+        fill='toself',
     ),
     row=1,
     col=2,
@@ -67,7 +70,8 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["Cognitive Function", "Sick Leave", "Energy Levels"],
-        r=[3,9,4]
+        r=[3,9,4],
+        fill='toself',
     ),
     row=1,
     col=2,
