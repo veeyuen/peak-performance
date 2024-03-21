@@ -99,7 +99,7 @@ fig.update_layout(
     title={
         'text': "Peak Performance",
         'y':0.9,
-        'x':0.5,
+        'x':0.4,
         'xanchor': 'center',
         'yanchor': 'top'},
     
