@@ -88,7 +88,7 @@ fig.update_layout(
     minreducedheight=450,
     width=850,
     height=850,
-    title_text = 'TEST TITLE',
+    title_text = 'PEAK PERFORMANCE',
 
     font=dict(
         family="Courier New, monospace",
