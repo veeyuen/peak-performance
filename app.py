@@ -66,7 +66,7 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["Sleep Quality", "Stress Management", "Mental Health"],
+        theta=["Cognitive Function", "Sick Leave", "Energy Levels"],
         r=[3,9,4]
     ),
     row=1,
