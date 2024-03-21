@@ -95,8 +95,6 @@ polar=dict(
       range=[0, 5]
     )),
 
-    title=go.layout.Title(text='Peak Performance - XXXX'),
-    polar={'radialaxis': {'visible': True}},
   showlegend=True
 )
 
