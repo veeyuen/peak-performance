@@ -86,8 +86,8 @@ fig.update_layout(
     autosize=False,
     minreducedwidth=450,
     minreducedheight=450,
-    width=650,
-    height=650,
+    width=850,
+    height=850,
     title_text = 'TEST TITLE',
 
     font=dict(
