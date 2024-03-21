@@ -84,8 +84,8 @@ fig.add_trace(
 
 fig.update_layout(
     autosize=False,
-    minreducedwidth=450,
-    minreducedheight=450,
+    minreducedwidth=350,
+    minreducedheight=350,
     width=850,
     height=850,
 #    title_text = 'PEAK PERFORMANCE',
