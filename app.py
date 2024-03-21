@@ -96,8 +96,6 @@ fig.update_layout(
         color="White"
     ),
 
-    margin=dict(l=20, r=20, t=20, b=20),
-
     title={
         'text': "Peak Performance",
         'y':0.9,
