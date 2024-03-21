@@ -45,6 +45,8 @@ fig.add_trace(
         theta=["Sleep Quality", "Stress Management", "Mental Health"],
         r=r1,
         fill='toself',
+        showlegend='True',
+        legend='TEST',
         name='Day 0',
     ),
     row=1,
