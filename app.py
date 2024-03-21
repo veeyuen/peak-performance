@@ -97,7 +97,7 @@ fig.update_layout(
     ),
 
     title={
-        'text': "Plot Title",
+        'text': "Peak Performance",
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
