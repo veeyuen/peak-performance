@@ -75,11 +75,11 @@ fig.add_trace(
 #pyo.plot(fig)
 
 fig.update_layout(
-    autosize=True,
-    minreducedwidth=250,
-    minreducedheight=250,
-    width=450,
-    height=450,
+    autosize=False,
+    minreducedwidth=450,
+    minreducedheight=450,
+    width=650,
+    height=650,
     
 polar=dict(
     radialaxis=dict(
