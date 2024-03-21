@@ -42,7 +42,7 @@ fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizon
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=["Sleep", "Stress Management", "Mental"],
+        theta=["Sleep", "Stress<br>Management", "Mental"],
         r=r1,
         fill='toself',
         name='Day 0',
@@ -52,7 +52,7 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["Sleep", "Stress Management", "Mental"],
+        theta=["Sleep", "Stress<br>Management", "Mental"],
         r=[3,9,4],
         fill='toself',
         name='Day 15',
