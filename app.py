@@ -80,7 +80,7 @@ fig.update_layout(
       visible=True,
       range=[0, 5]
     )),
-  showlegend=False
+  showlegend=True
 )
 
 st.plotly_chart(fig)
