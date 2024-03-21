@@ -42,7 +42,7 @@ fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1)
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
+        theta=["Sleep Quality", "Stress Management", "Mental Health"],
         r=r1,
     ),
     row=1,
@@ -50,24 +50,24 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
-        r=[3,9,4,5,3]
+        theta=["Sleep Quality", "Stress Management", "Mental Health"],
+        r=[3,9,4]
     ),
     row=1,
     col=1,
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
-        r=[5,6,3,8,5],
+        theta=["Sleep Quality", "Stress Management", "Mental Health"],
+        r=[5,6,3],
     ),
     row=1,
     col=2,
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["cat002", "cat003", "cat004", "cat005", "cat002"],
-        r=[3,9,4,5,3]
+        theta=["Sleep Quality", "Stress Management", "Mental Health"],
+        r=[3,9,4]
     ),
     row=1,
     col=2,
