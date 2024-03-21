@@ -75,7 +75,13 @@ fig.add_trace(
 #pyo.plot(fig)
 
 fig.update_layout(
-  polar=dict(
+    autosize=False,
+    minreducedwidth=250,
+    minreducedheight=250,
+    width=450,
+    height=450,
+    
+polar=dict(
     radialaxis=dict(
       visible=True,
       range=[0, 5]
