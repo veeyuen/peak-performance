@@ -75,7 +75,7 @@ fig.add_trace(
 #pyo.plot(fig)
 
 fig.update_layout(
-    autosize=False,
+    autosize=True,
     minreducedwidth=250,
     minreducedheight=250,
     width=450,
