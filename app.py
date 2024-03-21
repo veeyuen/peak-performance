@@ -113,7 +113,7 @@ polar=dict(
 )
 
 
-fig.update_yaxes(automargin=True)
+fig.update_xaxes(automargin=True)
 
 st.plotly_chart(fig)
 
