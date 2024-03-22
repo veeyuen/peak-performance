@@ -128,6 +128,16 @@ polar=dict(
   showlegend=True
 )
 
+fig.update_traces(mode = "lines+markers",
+      r = [1,2,3,4,5],
+      theta = [0,90,180,360,0],
+      line_color = "magenta",
+      marker = dict(
+        color = "royalblue",
+        symbol = "square",
+        size = 8
+      ))
+
 
 fig.update_yaxes(title_font_family="Arial")
 
