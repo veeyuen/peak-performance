@@ -124,7 +124,7 @@ fig.update_layout(
       visible=True,
       range=[0, 10],
         tickfont_size = 12,
-        color="Black"
+        color="Yellow"
     )),
 
     polar2=dict(        # second chart y-axis labels
@@ -132,7 +132,7 @@ fig.update_layout(
       visible=True,
       range=[0, 10],
         tickfont_size = 12,
-        color="Black"
+        color="Yellow"
     )),
 
     template="plotly_dark",
