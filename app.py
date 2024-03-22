@@ -138,8 +138,7 @@ fig.update_layout(
     template="plotly_dark",
 
     radialaxis=dict(
-        angle=-90,
-        tickangle=-90, # for the axis ticks to stay horizontal 
+        angle=-90 # for the axis ticks to stay horizontal 
     ),
 
 
