@@ -62,7 +62,7 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["Cognitive<br>Function", "Sick Leaves", "Energy"],
+        theta=["Cognitive<br>Function", "Sick<br>Leaves", "Energy<br>Levels"],
         r=[5,6,3],
         fill='toself',
         name='Day 0',
@@ -72,7 +72,7 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["Cognitive<br>Function", "Sick Leaves", "Energy"],
+        theta=["Cognitive<br>Function", "Sick<br>Leaves", "Energy<br>Levels"],
         r=[3,9,4],
         fill='toself',
         name='Day 15',
