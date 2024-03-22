@@ -98,7 +98,7 @@ fig.update_layout(
 
     title_xref="paper",
 
-    margin=dict(l=0),
+    margin=dict(l=20),
 
    
 
