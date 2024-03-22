@@ -142,17 +142,7 @@ polar=dict(
 
 fig.update_xaxes(automargin=True)
 
-fig.update_traces(fill = 'toself', textposition = 'top center',
-                 polar = dict(
-      radialaxis_tickfont_size = 8,
-      angularaxis = dict(
-        tickfont_size=8,
-        rotation=90, # start position of angular axis
-        direction="counterclockwise"
-      )
-    )
-                 
-         ),
+fig.update_traces(fill = 'toself', textposition = 'top center'),
 st.plotly_chart(fig)
 
 
