@@ -96,11 +96,7 @@ fig.update_layout(
         color="White"
     ),
 
-    layout = go.Layout(
-    margin=go.layout.Margin(
-        l=500
-    )
-    ),
+   
 
     title={
         'text': "Peak Performance",
