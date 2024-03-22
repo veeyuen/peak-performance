@@ -119,14 +119,14 @@ fig.update_layout(
         'xanchor': 'center',
         'yanchor': 'top'},
     
-    polar=dict(
+    polar=dict(            # first chart y-axis labels
     radialaxis=dict(
       visible=True,
       range=[0, 10],
         color="Black"
     )),
 
-    polar2=dict(
+    polar2=dict(        # second chart y-axis labels
     radialaxis=dict(
       visible=True,
       range=[0, 10],
