@@ -6,6 +6,17 @@ import plotly.express as px
 import random
 from plotly.subplots import make_subplots
 
+from pathlib import Path
+from PIL import Image
+
+images_folder = /Users/veesheenyuen/Desktop/DataScience/Peak/
+image_path = images_folder/'peak-logo.png'
+
+main_image = Image.open(image_path)
+st.image (main_image) 
+
+
+
 
 categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
 categories = [*categories, categories[0]]
@@ -122,8 +133,6 @@ polar=dict(
 fig.update_xaxes(automargin=True)
 
 fig.update_traces(fill = 'toself', textposition = 'top center')
-
-st.image('/Users/veesheenyuen/Desktop/DataScience/Peak/peak-logo.png')
 st.plotly_chart(fig)
 
 
