@@ -96,6 +96,7 @@ fig.update_layout(
         color="White"
     ),
 
+    title_xref="paper",
    
 
     title={
