@@ -135,6 +135,7 @@ fig.update_layout(
         color="Black"
     )),
 
+    template="plotly_dark",
 
 
     
