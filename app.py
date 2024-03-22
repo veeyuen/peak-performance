@@ -129,6 +129,9 @@ polar=dict(
 )
 
 
+fig.update_yaxes(title_font_family="Arial")
+
+
 fig.update_xaxes(automargin=True)
 
 fig.update_traces(fill = 'toself', textposition = 'top center')
