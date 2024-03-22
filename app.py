@@ -123,7 +123,7 @@ fig.update_xaxes(automargin=True)
 
 fig.update_traces(fill = 'toself', textposition = 'top center')
 
-
+st.image('/Users/veesheenyuen/Desktop/DataScience/Peak/peak-logo.png')
 st.plotly_chart(fig)
 
 
