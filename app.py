@@ -119,12 +119,23 @@ fig.update_layout(
         'xanchor': 'center',
         'yanchor': 'top'},
     
-polar=dict(
+    polar=dict(
     radialaxis=dict(
       visible=True,
       range=[0, 10],
         color="Black"
     )),
+
+    polar2=dict(
+    radialaxis=dict(
+      visible=True,
+      range=[0, 10],
+        color="Black"
+    )),
+
+
+
+    
 
   showlegend=True
 )
