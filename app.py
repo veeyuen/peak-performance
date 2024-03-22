@@ -12,8 +12,8 @@ from PIL import Image
 #images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
 #image_path = images_folder/peak-logo.png
 
-#main_image = Image.open(image_path)
-#st.image (main_image) 
+main_image = Image.open('/Users/veesheenyuen/Desktop/DataScience/Peak/peak-logo.png')
+st.image (main_image) 
 
 
 
