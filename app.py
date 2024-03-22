@@ -137,15 +137,15 @@ fig.update_layout(
 
     template="plotly_dark",
 
-    radialaxis=dict(
-        angle=-90 # for the axis ticks to stay horizontal 
-    ),
-
-
-    
-
   showlegend=True
 )
+
+fig.update_polars(
+    radialaxis=dict(
+        angle=-90 # for the axis ticks to stay horizontal 
+    )
+)
+
 
 #fig.update_traces(mode = "lines+markers",
 #      r = [1,2,3,4,5],
