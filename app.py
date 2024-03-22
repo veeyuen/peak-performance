@@ -135,6 +135,22 @@ fig.update_layout(
         color="Yellow"
     )),
 
+    layout=dict(
+        title="GDP Per Capita",
+        legend={
+            "title": "By country",
+            "xref": "container",
+            "yref": "container",
+            "y": 0.65,
+            "bgcolor": "Orange",
+        },
+        legend2={
+            "title": "By continent",
+            "xref": "container",
+            "yref": "container",
+            "y": 0.85,
+            "bgcolor": "Gold",
+
     template="plotly_dark",
 
   showlegend=True
