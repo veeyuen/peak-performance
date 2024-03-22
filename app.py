@@ -151,6 +151,9 @@ fig.update_layout(
             "y": 0.85,
             "bgcolor": "Gold",
 
+        },
+    ),
+
     template="plotly_dark",
 
   showlegend=True
