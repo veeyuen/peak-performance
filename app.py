@@ -10,7 +10,7 @@ from pathlib import Path
 from PIL import Image
 
 images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
-image_path = images_folder/'peak-logo.png'
+image_path = images_folder/peak-logo.png
 
 main_image = Image.open(image_path)
 st.image (main_image) 
