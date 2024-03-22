@@ -100,7 +100,7 @@ fig.update_layout(
     margin=go.layout.Margin(
         l=500
     )
-    )
+    ),
 
     title={
         'text': "Peak Performance",
