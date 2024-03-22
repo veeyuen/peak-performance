@@ -142,7 +142,7 @@ fig.update_layout(
 
 fig.update_polars(
     radialaxis=dict(
-        angle=-90 # for the axis ticks to stay horizontal 
+        angle=90 # for the axis ticks to stay horizontal 
     )
 )
 
