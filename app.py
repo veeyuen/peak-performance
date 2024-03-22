@@ -104,7 +104,7 @@ fig.update_layout(
     font=dict(
         family="Courier New, monospace",
         size=14,  # Set the font size here
-        color="White"
+        color="Black"
     ),
 
     title_xref="paper",
