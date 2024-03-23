@@ -108,7 +108,7 @@ fig.add_trace(
     ),
     row=1,
     col=2,
-),
+)
 
 fig.add_trace(
     go.Scatter(
