@@ -143,6 +143,7 @@ fig.update_layout(
 
     title={
         'text': "Peak Performance",
+        'color': "Black",
         'y':0.9,
         'x':0.4,
         'xanchor': 'center',
