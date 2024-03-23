@@ -146,9 +146,9 @@ fig.update_layout(
         title= "RECOVERY",
         x=0, 
         y=1, 
-        title_font_family="Times New Roman", 
+        title_font_family="Arial", 
         font=dict( 
-            family="Courier", 
+            family="Arial", 
             size=12, 
             color="White"
         ), 
@@ -161,9 +161,9 @@ fig.update_layout(
         title="NUTRITION",
         x=1, 
         y=1, 
-        title_font_family="Times New Roman", 
+        title_font_family="Arial", 
         font=dict( 
-            family="Courier", 
+            family="Arial", 
             size=12, 
             color="White"
         ), 
