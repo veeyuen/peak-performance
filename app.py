@@ -9,13 +9,20 @@ from plotly.subplots import make_subplots
 from pathlib import Path
 from PIL import Image
 
+import numpy as np
+np.random.seed(1)
+
 #images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
 #image_path = images_folder/peak-logo.png
 
 #main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
 #st.image (main_image) 
 
-
+N = 100
+random_x = np.linspace(0, 1, N)
+random_y0 = np.random.randn(N) + 5
+random_y1 = np.random.randn(N)
+random_y2 = np.random.randn(N) - 5
 
 
 categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
@@ -49,7 +56,13 @@ r1 =[5,6,3,8,5]
 
 
 
-fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizontal_spacing = 0.20)
+#fig = make_subplots(rows=2, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizontal_spacing = 0.20)
+
+fig = make_subplots(
+    rows=2, cols=2,
+    specs=[[{"type": "polar"}, {"type": "polar"}],
+           [{"type": "line"}, {"type": "line"}]],
+)
 
 fig.add_trace(
     go.Scatterpolar(
@@ -62,6 +75,7 @@ fig.add_trace(
     row=1,
     col=1,
 )
+
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
@@ -95,6 +109,13 @@ fig.add_trace(
     row=1,
     col=2,
 )
+
+fig.add_trace(go.Scatter(
+                x=random_x, y=random_y0,
+                mode='lines',
+                name='lines')
+             ),
+
 #pyo.plot(fig)
 
 fig.update_layout(
