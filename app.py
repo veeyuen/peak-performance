@@ -193,6 +193,21 @@ fig.update_layout(
         borderwidth=1
     ), 
 
+    legend3=dict( 
+        title="TEST",
+        x=0.77, 
+        y=0, 
+        title_font_family="Arial", 
+        font=dict( 
+            family="Arial", 
+            size=12, 
+            color="White"
+        ), 
+        bgcolor="Black", 
+        bordercolor="Black", 
+        borderwidth=1
+    ), 
+
 
   showlegend=True
 )
@@ -216,7 +231,7 @@ fig.update_polars(
 
 
 
-fig.update_xaxes(automargin=True)
+#fig.update_xaxes(automargin=True)
 
 fig.update_traces(fill = 'toself', textposition = 'top center'),
 st.plotly_chart(fig)
