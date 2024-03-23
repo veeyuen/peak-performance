@@ -113,8 +113,8 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=random_x, y=random_y0,
-        mode='lines',
-        name='lines'),
+        mode='lines+markers',
+        name='Time (Days'),
     row=2,
     col=1,
     
@@ -124,7 +124,7 @@ fig.add_trace(
     go.Scatter(
         x=random_x, y=random_y1,
         mode='lines+markers',
-        name='lines+markers'),
+        name='Time (Days)'),
     row=2,
     col=2,
 
