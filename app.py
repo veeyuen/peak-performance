@@ -143,7 +143,6 @@ fig.update_layout(
     template="plotly_dark",
 
     legend1=dict( 
-        "title": "Nutrition",
         x=1, 
         y=0, 
         title_font_family="Times New Roman", 
@@ -159,7 +158,7 @@ fig.update_layout(
 
     legend2=dict( 
         x=0, 
-        y=1, 
+        y=0, 
         title_font_family="Times New Roman", 
         font=dict( 
             family="Courier", 
