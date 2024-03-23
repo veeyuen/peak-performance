@@ -118,7 +118,7 @@ fig.add_trace(
     row=2,
     col=1,
     
-    ),
+    )
 
 #pyo.plot(fig)
 
