@@ -143,7 +143,7 @@ fig.update_layout(
     template="plotly_dark",
 
     legend1=dict( 
-        title= "By country",
+        title= "RECOVERY",
         x=1, 
         y=0, 
         title_font_family="Times New Roman", 
