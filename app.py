@@ -149,7 +149,7 @@ fig.update_layout(
         font=dict( 
             family="Courier", 
             size=12, 
-            color="black"
+            color="White"
         ), 
         bgcolor="Black", 
         bordercolor="Black", 
@@ -163,7 +163,7 @@ fig.update_layout(
         font=dict( 
             family="Courier", 
             size=12, 
-            color="black"
+            color="White"
         ), 
         bgcolor="Black", 
         bordercolor="Black", 
