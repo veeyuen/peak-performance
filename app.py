@@ -159,8 +159,8 @@ fig.update_layout(
 
     legend2=dict( 
         title="Nutrition",
-        x=2, 
-        y=0, 
+        x=1, 
+        y=1, 
         title_font_family="Times New Roman", 
         font=dict( 
             family="Courier", 
