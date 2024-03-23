@@ -49,7 +49,7 @@ r1 =[5,6,3,8,5]
 
 
 
-fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizontal_spacing = 0.25)
+fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}] * 2] * 2, horizontal_spacing = 0.25)
 
 fig.add_trace(
     go.Scatterpolar(
