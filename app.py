@@ -57,6 +57,7 @@ fig.add_trace(
         r=r1,
         fill='toself',
         name='Day 0',
+        legend=legend1
     ),
     row=1,
     col=1,
@@ -67,6 +68,7 @@ fig.add_trace(
         r=[3,9,4],
         fill='toself',
         name='Day 15',
+        legend=legend1
     ),
     row=1,
     col=1,
@@ -77,6 +79,7 @@ fig.add_trace(
         r=[5,6,3],
         fill='toself',
         name='Day 0',
+        legend=legend2
     ),
     row=1,
     col=2,
@@ -87,6 +90,7 @@ fig.add_trace(
         r=[3,9,4],
         fill='toself',
         name='Day 15',
+        legend=legend2
     ),
     row=1,
     col=2,
@@ -138,7 +142,7 @@ fig.update_layout(
   
     template="plotly_dark",
 
-    legend=dict( 
+    legend1=dict( 
         x=0, 
         y=1, 
         title_font_family="Times New Roman", 
@@ -151,6 +155,21 @@ fig.update_layout(
         bordercolor="Black", 
         borderwidth=1
     ), 
+
+    legend2=dict( 
+        x=0, 
+        y=1, 
+        title_font_family="Times New Roman", 
+        font=dict( 
+            family="Courier", 
+            size=12, 
+            color="black"
+        ), 
+        bgcolor="White", 
+        bordercolor="Black", 
+        borderwidth=1
+    ), 
+
 
   showlegend=True
 )
