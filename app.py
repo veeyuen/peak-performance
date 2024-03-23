@@ -25,15 +25,15 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N) - 5
 
 
-categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
-categories = [*categories, categories[0]]
+#categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
+#categories = [*categories, categories[0]]
 
-Day_0 = [0, 5.5, 4, 3, 9.75]
-Day_15 = [-1.9, 5.9, 4, 4, 5, 2]
-Day_30 = [-4.0, 6.4, 7, 6, 0]
-Day_0 = [*Day_0, Day_0[0]]
-Day_15 = [*Day_15, Day_15[0]]
-Day_30 = [*Day_30, Day_30[0]]
+#Day_0 = [0, 5.5, 4, 3, 9.75]
+#Day_15 = [-1.9, 5.9, 4, 4, 5, 2]
+#Day_30 = [-4.0, 6.4, 7, 6, 0]
+#Day_0 = [*Day_0, Day_0[0]]
+#Day_15 = [*Day_15, Day_15[0]]
+#Day_30 = [*Day_30, Day_30[0]]
 
 r1 =[5,6,3,8,5]
 
@@ -61,7 +61,7 @@ r1 =[5,6,3,8,5]
 fig = make_subplots(
     rows=2, cols=2,
     specs=[[{"type": "polar"}, {"type": "polar"}],
-           [{"type": "scatter"}, {"type": "scatter"}]],
+           [{"type": "scatter"}, {"type": "scatter"}]], horizontal_spacing= 0.20
 )
 
 fig.add_trace(
