@@ -120,6 +120,16 @@ fig.add_trace(
     
     )
 
+fig.add_trace(
+    go.Scatter(
+        x=random_x, y=random_y1,
+        mode='lines+markers',
+        name='lines+markers'),
+    row=2,
+    col=2,
+
+)
+
 #pyo.plot(fig)
 
 fig.update_layout(
