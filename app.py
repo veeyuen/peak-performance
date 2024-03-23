@@ -151,21 +151,21 @@ fig.update_layout(
             size=12, 
             color="black"
         ), 
-        bgcolor="Orange", 
+        bgcolor="Black", 
         bordercolor="Black", 
         borderwidth=1
     ), 
 
     legend2=dict( 
-        x=0, 
-        y=1, 
+        x=2, 
+        y=0, 
         title_font_family="Times New Roman", 
         font=dict( 
             family="Courier", 
             size=12, 
             color="black"
         ), 
-        bgcolor="White", 
+        bgcolor="Black", 
         bordercolor="Black", 
         borderwidth=1
     ), 
