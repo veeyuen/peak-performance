@@ -147,7 +147,7 @@ fig.update_layout(
             size=12, 
             color="black"
         ), 
-        bgcolor="LightBlue", 
+        bgcolor="Black", 
         bordercolor="Black", 
         borderwidth=1
     ), 
