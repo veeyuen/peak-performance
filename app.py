@@ -144,7 +144,7 @@ fig.update_layout(
 
     legend1=dict( 
         title= "RECOVERY",
-        x=0.17, 
+        x=0.16, 
         y=1, 
         title_font_family="Arial", 
         font=dict( 
@@ -159,7 +159,7 @@ fig.update_layout(
 
     legend2=dict( 
         title="NUTRITION",
-        x=0.75, 
+        x=0.76, 
         y=1, 
         title_font_family="Arial", 
         font=dict( 
