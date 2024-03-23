@@ -61,7 +61,7 @@ r1 =[5,6,3,8,5]
 fig = make_subplots(
     rows=2, cols=2,
     specs=[[{"type": "polar"}, {"type": "polar"}],
-           [{"type": "line"}, {"type": "line"}]],
+           [{"type": "scatter"}, {"type": "scatter"}]],
 )
 
 fig.add_trace(
