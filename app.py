@@ -145,7 +145,7 @@ fig.update_layout(
     legend1=dict( 
         title= "RECOVERY",
         x=0, 
-        y=0, 
+        y=1, 
         title_font_family="Times New Roman", 
         font=dict( 
             family="Courier", 
