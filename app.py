@@ -138,6 +138,20 @@ fig.update_layout(
   
     template="plotly_dark",
 
+    legend=dict( 
+        x=0, 
+        y=1, 
+        title_font_family="Times New Roman", 
+        font=dict( 
+            family="Courier", 
+            size=12, 
+            color="black"
+        ), 
+        bgcolor="LightBlue", 
+        bordercolor="Black", 
+        borderwidth=1
+    ), 
+
   showlegend=True
 )
 
