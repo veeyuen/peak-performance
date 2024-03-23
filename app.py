@@ -195,7 +195,7 @@ fig.update_layout(
         bgcolor="Black", 
         bordercolor="Black", 
         borderwidth=1
-    )
+    ),
 
   showlegend=True
 )
