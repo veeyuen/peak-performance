@@ -237,7 +237,7 @@ fig.update_polars(
 
 #fig.update_xaxes(automargin=True)
 
-fig.update_traces(fill = 'toself', textposition = 'top center'),
+#fig.update_traces(fill = 'toself', textposition = 'top center'),
 st.plotly_chart(fig)
 
 
