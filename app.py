@@ -108,13 +108,17 @@ fig.add_trace(
     ),
     row=1,
     col=2,
-)
+),
 
-fig.add_trace(go.Scatter(
-                x=random_x, y=random_y0,
-                mode='lines',
-                name='lines')
-             ),
+fig.add_trace(
+    go.Scatter(
+        x=random_x, y=random_y0,
+        mode='lines',
+        name='lines'),
+    row=2,
+    col=1,
+    
+    ),
 
 #pyo.plot(fig)
 
