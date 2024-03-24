@@ -215,6 +215,9 @@ fig.update_layout(
         borderwidth=1
     ),
 
+    yaxis_title = 'Volume',
+    xaxis_title = 'Date',
+
   showlegend=True
 )
 
