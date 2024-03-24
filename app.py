@@ -159,12 +159,12 @@ fig.update_layout(
     margin=dict(l=20),
 
 
-    title={
-        'text': "Peak Performance",
-        'y':0.9,
-        'x':0.4,
-        'xanchor': 'center',
-        'yanchor': 'top'},
+#    title={
+#        'text': "Peak Performance",
+#        'y':0.9,
+#        'x':0.4,
+#        'xanchor': 'center',
+#        'yanchor': 'top'},
     
     polar=dict(            # first chart y-axis labels
     radialaxis=dict(
