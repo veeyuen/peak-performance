@@ -215,8 +215,8 @@ fig.update_layout(
         borderwidth=1
     ),
 
-    yaxis_title = 'Stress<br>Activity',
-    xaxis_title = 'Days',
+#    yaxis_title = 'Stress<br>Activity',
+#    xaxis_title = 'Days',
 
   showlegend=True
 )
@@ -226,6 +226,9 @@ fig.update_polars(
         angle=45
     )
 )
+
+fig.update_xaxes(title_text="Days", row=2, col=1)
+fig.update_yaxes(title_text="Stress<br>Activity", row=2, col=1)
 
 
 #fig.update_traces(mode = "lines+markers",
