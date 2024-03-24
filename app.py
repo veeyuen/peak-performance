@@ -64,8 +64,8 @@ yaxis_title="Services"
 fig = make_subplots(
     rows=2, cols=2,
     specs=[[{"type": "polar"}, {"type": "polar"}],
-           [{"type": "scatter"}, {"type": "scatter"}]], horizontal_spacing= 0.20, , row_heights=[0.7, 0.3]
-)
+           [{"type": "scatter"}, {"type": "scatter"}]], horizontal_spacing= 0.20, row_heights=[0.7, 0.3]
+    )
 
 fig.add_trace(
     go.Scatterpolar(
