@@ -20,7 +20,7 @@ np.random.seed(1)
 
 N = 100
 random_x = np.linspace(0, 300, N)
-random_y0 = np.random.randn(N) + 5
+random_y0 = np.random.randn(N) 
 random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N) - 5
 
