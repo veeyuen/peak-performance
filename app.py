@@ -58,6 +58,9 @@ r1 =[5,6,3,8,5]
 
 #fig = make_subplots(rows=2, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizontal_spacing = 0.20)
 
+xaxis_title="Miliseconds"
+yaxis_title="Services"
+
 fig = make_subplots(
     rows=2, cols=2,
     specs=[[{"type": "polar"}, {"type": "polar"}],
