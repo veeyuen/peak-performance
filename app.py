@@ -115,6 +115,7 @@ fig.add_trace(
         x=random_x, y=random_y0,
         mode='lines+markers',
         name='Time (Days)',
+        x='date', y="GOOG",
         showlegend=False
     ),
     row=2,
