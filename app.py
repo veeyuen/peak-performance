@@ -141,10 +141,10 @@ fig.add_trace(
 #pyo.plot(fig)
 
 fig.update_layout(
-    autosize=True,
-    minreducedwidth=350,
-    minreducedheight=350,
-    width=1100,
+    autosize=False,
+#    minreducedwidth=350,
+#    minreducedheight=350,
+    width=850,
     height=850,
 #    title_text = 'PEAK PERFORMANCE',
 
