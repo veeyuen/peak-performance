@@ -215,7 +215,7 @@ fig.update_layout(
         borderwidth=1
     ),
 
-    yaxis_title = 'Activity',
+    yaxis_title = 'Stress<br>Activity',
     xaxis_title = 'Days',
 
   showlegend=True
