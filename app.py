@@ -22,7 +22,7 @@ N = 100
 random_x = np.linspace(0, 300, N)
 random_y0 = np.random.randn(N) 
 random_y1 = np.random.randn(N)
-random_y2 = np.random.randn(N) - 5
+random_y2 = np.random.randn(N) 
 
 
 #categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
