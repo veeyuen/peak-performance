@@ -165,6 +165,9 @@ fig.update_layout(
         'x':0.2,
         'xanchor': 'center',
         'yanchor': 'top'},
+
+    title_font_family="Times New Roman",
+    title_font_color="red",
     
     polar=dict(            # first chart y-axis labels
     radialaxis=dict(
