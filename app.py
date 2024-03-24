@@ -229,6 +229,9 @@ fig.update_polars(
 
 fig.update_xaxes(title_text="Days", row=2, col=1)
 fig.update_yaxes(title_text="Stress<br>Activity", row=2, col=1)
+fig.update_xaxes(title_text="Days", row=2, col=2)
+fig.update_yaxes(title_text="Nutrition<br>Activity", row=2, col=2)
+
 
 
 #fig.update_traces(mode = "lines+markers",
