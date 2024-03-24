@@ -115,7 +115,8 @@ fig.add_trace(
         x=random_x, y=random_y0,
         mode='lines+markers',
         name='Time (Days)',
-        x='date', y="GOOG",
+        xaxis_title='Month',
+        yaxis_title='Temperature (degrees F)',
         showlegend=False
     ),
     row=2,
