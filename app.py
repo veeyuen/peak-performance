@@ -114,7 +114,9 @@ fig.add_trace(
     go.Scatter(
         x=random_x, y=random_y0,
         mode='lines+markers',
-        name='Time (Days'),
+        name='Time (Days)',
+        showlegend=False
+    ),
     row=2,
     col=1,
     
