@@ -199,7 +199,7 @@ fig.update_layout(
         title_font_family="Arial", 
         font=dict( 
             family="Arial", 
-            size=12, 
+            size=10, 
             color="White"
         ), 
         bgcolor="Black", 
@@ -214,7 +214,7 @@ fig.update_layout(
         title_font_family="Arial", 
         font=dict( 
             family="Arial", 
-            size=12, 
+            size=10, 
             color="White"
         ), 
         bgcolor="Black", 
