@@ -162,9 +162,19 @@ fig.add_trace(
     ),
     row=2,
     col=2,
+    )
 
+fig.add_trace(
+    go.Scatter(
+        x=random_x, y=random_y2,
+        mode='lines+markers',
+        name='Time (Days)',
+        showlegend=False
+    ),
+    row=4,
+    col=1,
+    )
 
-)
 
 #pyo.plot(fig)
 
