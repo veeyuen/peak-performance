@@ -256,6 +256,21 @@ fig.update_layout(
     ), 
 
     legend2=dict( 
+        title="EXERCISE",
+        x=0.05, 
+        y=2.1, 
+        title_font_family="Arial", 
+        font=dict( 
+            family="Arial", 
+            size=10, 
+            color="White"
+        ), 
+        bgcolor="Black", 
+        bordercolor="Black", 
+        borderwidth=1
+    ),
+
+    legend3=dict( 
         title="NUTRITION",
         x=0.55, 
         y=1.1, 
@@ -269,6 +284,7 @@ fig.update_layout(
         bordercolor="Black", 
         borderwidth=1
     ),
+
 
 #    yaxis_title = 'Stress<br>Activity',
 #    xaxis_title = 'Days',
