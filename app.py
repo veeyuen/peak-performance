@@ -119,7 +119,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Levek<b>", "<b>Stamina<b>"],
+        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
         r=[2,5,8],
         fill='toself',
         name='Day 0',
@@ -130,7 +130,7 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Scatterpolar(
-        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Levek<b>", "<b>Stamina<b>"],
+        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
         r=[7,3,9],
         fill='toself',
         name='Day 15',
