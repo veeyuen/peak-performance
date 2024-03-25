@@ -303,7 +303,10 @@ fig.update_yaxes(title_text="Recovery<br>Activity", row=2, col=1)
 fig.update_xaxes(title_text="Days", row=2, col=2)
 fig.update_yaxes(title_text="Nutrition<br>Activity", row=2, col=2)
 fig.update_xaxes(title_text="Days", row=4, col=1)
-fig.update_yaxes(title_text="Exercise<br>Activity", row=4, col=4)
+fig.update_yaxes(title_text="Exercise<br>Activity", row=4, col=1)
+fig.update_xaxes(title_text="Days", row=3, col=2)
+fig.update_yaxes(title_text="Overall<br>Performance", row=3, col=2)
+
 
 
 
