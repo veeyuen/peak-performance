@@ -148,7 +148,7 @@ fig.add_trace(
         x=random_x, y=random_y0,
         mode='lines+markers',
         name='Time (Days)',
-        line=dict(color='yellow', width=4),
+        line=dict(color='ochre', width=2),
         showlegend=False
     ),
     row=2,
