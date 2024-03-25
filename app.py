@@ -69,7 +69,7 @@ fig = make_subplots(
            [{"type": "polar"}, {"type": "scatter", "rowspan": 2}],
            [{"type": "scatter"}, None]          
               ], 
-    horizontal_spacing= 0.20, vertical_spacing= 0.05, 
+    horizontal_spacing= 0.20, vertical_spacing= 0.08, 
     row_heights=[0.7, 0.3, 0.7, 0.3]
     )
 
