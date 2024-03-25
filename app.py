@@ -183,7 +183,7 @@ fig.add_trace(
         name='Time (Days)',
         showlegend=False
     ),
-    row=4,
+    row=3,
     col=2,
     )
 
