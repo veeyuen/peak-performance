@@ -274,7 +274,7 @@ fig.update_layout(
 
     legend3=dict( 
         title="EXERCISE",
-        x=0.05, 
+        x=0.0, 
         y=0.5, 
         title_font_family="Arial", 
         font=dict( 
