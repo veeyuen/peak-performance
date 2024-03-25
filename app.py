@@ -161,6 +161,7 @@ fig.add_trace(
         x=random_x, y=random_y1,
         mode='lines+markers',
         name='Time (Days)',
+        line=dict(color='orange', width=2),
         showlegend=False
     ),
     row=2,
@@ -172,6 +173,7 @@ fig.add_trace(
         x=random_x, y=random_y2,
         mode='lines+markers',
         name='Time (Days)',
+        line=dict(color='orange', width=2),
         showlegend=False
     ),
     row=4,
