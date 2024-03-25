@@ -15,8 +15,8 @@ np.random.seed(1)
 #images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
 #image_path = images_folder/peak-logo.png
 
-main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
-st.image (main_image, caption='TEST') 
+#main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
+#st.image (main_image, caption='TEST') 
 
 N = 100
 random_x = np.linspace(0, 300, N)
