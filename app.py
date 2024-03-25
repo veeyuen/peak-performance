@@ -125,7 +125,7 @@ fig.add_trace(
         r=[2,5,8],
         fill='toself',
         name='Day 0',
-        legend="legend2"
+        legend="legend3"
     ),
     row=3,
     col=1,
@@ -136,7 +136,7 @@ fig.add_trace(
         r=[7,3,9],
         fill='toself',
         name='Day 15',
-        legend="legend2"
+        legend="legend3"
     ),
     row=3,
     col=1,
