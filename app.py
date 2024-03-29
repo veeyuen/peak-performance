@@ -29,9 +29,9 @@ Day_30 = [*Day_30, Day_30[0]]
 
 fig = go.Figure(
     data=[
-        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
+        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 0'),
         go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 30')
     ],
     layout=go.Layout(
         title=go.layout.Title(text='Peak Performance - XXXX'),
