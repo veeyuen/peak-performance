@@ -17,7 +17,7 @@ import numpy as np
 #main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
 #st.image (main_image, caption='TEST') 
 
-categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
+categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
 categories = [*categories, categories[0]]
 
 Day_0 = [0, 5.5, 4, 3, 9.75, 5, 9, 7,10]
