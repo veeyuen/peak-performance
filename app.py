@@ -21,8 +21,8 @@ categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management'
 categories = [*categories, categories[0]]
 
 Day_0 = [0, 5.5, 4, 3, 6, 5, 9, 0,10]
-Day_15 = [2, 7, 5, 6, 8, 8, 7, 1, 10]
-Day_30 = [3, 8, 5, 7, 8, 9, 9, 0, 9]
+Day_15 = [4, 7, 5, 6, 8, 8, 7, 1, 10]
+Day_30 = [6, 8, 5, 7, 8, 9, 9, 0, 9]
 Day_0 = [*Day_0, Day_0[0]]
 Day_15 = [*Day_15, Day_15[0]]
 Day_30 = [*Day_30, Day_30[0]]
