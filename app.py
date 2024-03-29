@@ -20,9 +20,9 @@ import numpy as np
 categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
 categories = [*categories, categories[0]]
 
-Day_0 = [0, 5.5, 4, 3, 9.75, 5, 9, 7,10]
-Day_15 = [2, 7, 5, 6, 6, 8, 7, 8, 10]
-Day_30 = [3, 8, 5, 7, 7, 9, 9, 9, 9]
+Day_0 = [0, 5.5, 4, 3, 6, 5, 9, 7,10]
+Day_15 = [2, 7, 5, 6, 8, 8, 7, 8, 10]
+Day_30 = [3, 8, 5, 7, 8, 9, 9, 9, 9]
 Day_0 = [*Day_0, Day_0[0]]
 Day_15 = [*Day_15, Day_15[0]]
 Day_30 = [*Day_30, Day_30[0]]
