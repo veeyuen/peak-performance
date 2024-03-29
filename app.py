@@ -39,7 +39,7 @@ fig = go.Figure(
         showlegend=True
     )
 )
-template="plotly_dark"
+fig.update_layout(template="plotly_dark", title="Mt Bruno Elevation")
 
 #if __name__ == '__main__':
 #pyo.plot(fig)
