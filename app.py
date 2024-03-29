@@ -10,13 +10,48 @@ from pathlib import Path
 from PIL import Image
 
 import numpy as np
-np.random.seed(1)
 
 #images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
 #image_path = images_folder/peak-logo.png
 
 #main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
 #st.image (main_image, caption='TEST') 
+
+categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
+categories = [*categories, categories[0]]
+
+Day_0 = [0, 5.5, 4, 3, 9.75, 5, 9, 7,10]
+Day_15 = [2, 7, 5, 6, 6, 8, 9, 8, 10]
+Day_30 = [3, 8, 5, 7, 7, 9, 9, 9, 9]
+Day_0 = [*Day_0, Day_0[0]]
+Day_15 = [*Day_15, Day_15[0]]
+Day_30 = [*Day_30, Day_30[0]]
+
+fig = go.Figure(
+    data=[
+        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
+        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
+        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
+    ],
+    layout=go.Layout(
+        title=go.layout.Title(text='Peak Performance - XXXX'),
+        polar={'radialaxis': {'visible': True}},
+        showlegend=True
+    )
+)
+
+#if __name__ == '__main__':
+#pyo.plot(fig)
+
+st.plotly_chart(fig)
+
+
+
+#--------------------------------------------------
+# multiple plots
+
+"""
+np.random.seed(1)
 
 N = 100
 random_x = np.linspace(0, 300, N)
@@ -26,41 +61,8 @@ random_y2 = np.random.randn(N)
 random_y3 = np.random.randn(N) 
 
 
-#categories = ['Weight', 'Sleep Length(hrs)', 'Sleep Quality[1-10]', 'Stress Management[1-10]', 'Mental Health[15-0]']
-#categories = [*categories, categories[0]]
-
-#Day_0 = [0, 5.5, 4, 3, 9.75]
-#Day_15 = [-1.9, 5.9, 4, 4, 5, 2]
-#Day_30 = [-4.0, 6.4, 7, 6, 0]
-#Day_0 = [*Day_0, Day_0[0]]
-#Day_15 = [*Day_15, Day_15[0]]
-#Day_30 = [*Day_30, Day_30[0]]
 
 r1 =[5,6,3,8,5]
-
-# Simple radar plot
-
-#fig = go.Figure(
-#    data=[
-#        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 0'),
-#        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-#        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 30')
-#    ],
-#    layout=go.Layout(
-#        title=go.layout.Title(text='Peak Performance - XXXX'),
-#        polar={'radialaxis': {'visible': True}},
-#        showlegend=True
-#    )
-#)
-
-#if __name__ == '__main__':
-
-
-
-#fig = make_subplots(rows=2, cols=2, specs=[[{'type': 'polar'}] * 2] * 1, horizontal_spacing = 0.20)
-
-xaxis_title="Miliseconds"
-yaxis_title="Services"
 
 fig = make_subplots(
     rows=4, cols=2,
@@ -193,7 +195,6 @@ fig.add_trace(
     )
 
 
-#pyo.plot(fig)
 
 fig.update_layout(
     autosize=False,
@@ -288,10 +289,6 @@ fig.update_layout(
         borderwidth=1
     ),
 
-
-#    yaxis_title = 'Stress<br>Activity',
-#    xaxis_title = 'Days',
-
   showlegend=True
 )
 
@@ -313,7 +310,7 @@ fig.update_yaxes(title_text="Overall<br>Performance", row=3, col=2)
 
 
 
-
+# use below only if necessary
 #fig.update_traces(mode = "lines+markers",
 #      r = [1,2,3,4,5],
 #      theta = [0,90,180,360,0],
@@ -326,23 +323,14 @@ fig.update_yaxes(title_text="Overall<br>Performance", row=3, col=2)
 
 
 
-#fig.update_xaxes(automargin=True)
-
-#fig.update_traces(fill = 'toself', textposition = 'top center'),
 st.plotly_chart(fig)
 
-
-#fig = make_subplots(rows=1, cols=2, specs=[[{"type": "barpolar"}, {"type": "barpolar"}],
-#           )
-
-#fig.add_trace(go.Barpolar(r=Day_0, theta=categories, name='Day 0'),row=1, col=1)
-
-#fig.add_trace(go.Barpolar(r=Day_15, theta=categories, name='Day 15'),row=1, col=2)
-
+"""
 #pyo.plot(fig)
 #st.plotly_chart(fig)
 
-
+#-----------------------------------------
+# chart with slider bar
 
 #def radar_chart(val):
 #    df = pd.DataFrame(dict(
