@@ -39,7 +39,7 @@ fig = go.Figure(
         showlegend=True
     )
 )
-fig.update_layout(template="ggplot2", title="Mt Bruno Elevation")
+fig.update_layout(template="seaborn", title="Mt Bruno Elevation")
 
 #if __name__ == '__main__':
 #pyo.plot(fig)
