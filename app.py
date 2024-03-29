@@ -39,6 +39,7 @@ fig = go.Figure(
         showlegend=True
     )
 )
+template="plotly_dark"
 
 #if __name__ == '__main__':
 #pyo.plot(fig)
