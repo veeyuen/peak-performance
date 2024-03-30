@@ -64,7 +64,7 @@ random_y3 = np.random.randn(N)
 
 N = 100
 t = np.linspace(0, 1, N)
-freq = 5.0
+freq = 10.0
 
 c = np.sin(2 * np.pi * freq * t + 0.0)
 
