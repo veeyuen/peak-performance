@@ -61,10 +61,16 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N) 
 random_y3 = np.random.randn(N) 
 
-x = np.linspace(-np.pi, np.pi, 201)
 
-x_sinwave=np.random.uniform(low=0, high=math.pi, size=20)
-y_sinwave=np.sin(x_sinwave)
+N = 100
+t = np.linspace(0, 1, N)
+freq = 5.0
+
+c = np.sin(2 * np.pi * freq * t + 0.0)
+
+
+x_sinwave=c
+y_sinwave=t
 
 
 r1 =[5,6,3,8,5]
