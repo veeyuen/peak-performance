@@ -69,8 +69,8 @@ freq = 5.0
 c = np.sin(2 * np.pi * freq * t + 0.0)
 
 
-x_sinwave=c
-y_sinwave=t
+x_sinwave=t
+y_sinwave=c
 
 
 r1 =[5,6,3,8,5]
