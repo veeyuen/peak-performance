@@ -10,6 +10,7 @@ from pathlib import Path
 from PIL import Image
 
 import numpy as np
+import math
 
 #images_folder = '/Users/veesheenyuen/Desktop/DataScience/Peak/'
 #image_path = images_folder/peak-logo.png
