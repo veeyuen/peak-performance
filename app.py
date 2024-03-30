@@ -64,7 +64,7 @@ random_y3 = np.random.randn(N)
 x = np.linspace(-np.pi, np.pi, 201)
 
 x_sinwave=np.random.uniform(low=0, high=math.pi, size=20)
-y_sinwave=np.sin(x_sinwave)+(0.1*np.random.randn(x_sinwave.shape[0]))
+y_sinwave=np.sin(x_sinwave)
 
 
 r1 =[5,6,3,8,5]
