@@ -17,41 +17,40 @@ import numpy as np
 #main_image = Image.open('/Users/veesheenyuen/Desktop/peak-logo.png')
 #st.image (main_image, caption='TEST') 
 
-categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
-categories = [*categories, categories[0]]
+#categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Mental Health']
+#categories = [*categories, categories[0]]
 
-Day_0 = [0, 5.5, 4, 3, 6, 5, 9, 0,10]
-Day_15 = [4, 7, 5, 6, 8, 8, 7, 1, 10]
-Day_30 = [6, 8, 5, 7, 8, 9, 9, 0, 9]
-Day_0 = [*Day_0, Day_0[0]]
-Day_15 = [*Day_15, Day_15[0]]
-Day_30 = [*Day_30, Day_30[0]]
+#Day_0 = [0, 5.5, 4, 3, 6, 5, 9, 0,10]
+##Day_15 = [4, 7, 5, 6, 8, 8, 7, 1, 10]
+#Day_30 = [6, 8, 5, 7, 8, 9, 9, 0, 9]
+#Day_0 = [*Day_0, Day_0[0]]
+#Day_15 = [*Day_15, Day_15[0]]
+#Day_30 = [*Day_30, Day_30[0]]
 
-fig = go.Figure(
-    data=[
-        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 0'),
-        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
-        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 30')
-    ],
-    layout=go.Layout(
-        title=go.layout.Title(text='Peak Performance - XXXX'),
-        polar={'radialaxis': {'visible': True}},
-        showlegend=True
-    )
-)
-fig.update_layout(template="plotly_dark", title="Peak Performance")
+#fig = go.Figure(
+#    data=[
+#        go.Scatterpolar(r=Day_30, theta=categories, fill='toself', name='Day 0'),
+#        go.Scatterpolar(r=Day_15, theta=categories, fill='toself', name='Day 15'),
+#        go.Scatterpolar(r=Day_0, theta=categories, fill='toself', name='Day 30')
+#    ],
+#    layout=go.Layout(
+#        title=go.layout.Title(text='Peak Performance - XXXX'),
+#        polar={'radialaxis': {'visible': True}},
+#        showlegend=True
+#    )
+#)
+#fig.update_layout(template="plotly_dark", title="Peak Performance")
 
 #if __name__ == '__main__':
 #pyo.plot(fig)
 
-st.plotly_chart(fig)
+#st.plotly_chart(fig)
 
 
 
 #--------------------------------------------------
 # multiple plots
 
-"""
 np.random.seed(1)
 
 N = 100
@@ -61,7 +60,7 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N) 
 random_y3 = np.random.randn(N) 
 
-
+x = np.linspace(-np.pi, np.pi, 201)
 
 r1 =[5,6,3,8,5]
 
@@ -326,7 +325,6 @@ fig.update_yaxes(title_text="Overall<br>Performance", row=3, col=2)
 
 st.plotly_chart(fig)
 
-"""
 #pyo.plot(fig)
 #st.plotly_chart(fig)
 
