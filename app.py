@@ -69,7 +69,7 @@ freq = 1.0
 c = np.sin(2 * np.pi * freq * t + 0.0)
 
 
-x_sinwave=t
+x_sinwave=t*300
 y_sinwave=c
 
 
