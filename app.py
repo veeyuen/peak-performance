@@ -152,7 +152,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=random_y0,
+        x=x_sinwave, y=y_sinwave,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
