@@ -21,9 +21,9 @@ import math
 categories = ['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Energy Levels']
 categories = [*categories, categories[0]]
 
-Day_0 = [0.5, 4, 3, 3, 3, 6.2, 3.5, 0, 3]
-Day_30 = [3.5, 6, 5, 10, 7, 7.6, 5.5, 8.7, 5]
-Day_60 = [8.75, 9, 8, 10, 10, 8.95, 8, 10, 8]
+Day_0 = [1.9, 4, 3, 3, 3, 5.5, 3.5, 1, 3]
+Day_30 = [4.15, 6, 5, 10, 7, 6.9, 5.5, 8.8, 5]
+Day_60 = [7.8, 9, 8, 10, 10, 8.06, 8, 10, 8]
 Day_0 = [*Day_0, Day_0[0]]
 Day_30 = [*Day_30, Day_30[0]]
 Day_60 = [*Day_60, Day_60[0]]
