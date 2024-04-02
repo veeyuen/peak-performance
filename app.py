@@ -51,7 +51,7 @@ import math
 
 #st.plotly_chart(fig)
 
-random_x = np.array([0, 30, 60, 90])
+x = np.array([0, 30, 60, 90])
 recovery_y0 = np.array([np.nan, np.nan, 10.66, 12.88])
 nutrition_y1 = np.array([np.nan, np.nan, 12.53, 16.47])
 exercise_y2 = np.array([np.nan, np.nan, 15.47, 21.51])
@@ -112,7 +112,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=x_peak, y=recovery_y0,
+        x=x, y=recovery_y0,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -125,7 +125,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=x_peak, y=nutrition_y1,
+        x=x, y=nutrition_y1,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -137,7 +137,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=x_peak, y=exercise_y2,
+        x=x, y=exercise_y2,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -149,7 +149,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=x_peak, y=overall_y3,
+        x=x, y=overall_y3,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='royalblue', width=2),
