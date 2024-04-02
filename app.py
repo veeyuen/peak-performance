@@ -47,7 +47,7 @@ polar=dict(
       range=[1, 10]
     )),
       showlegend=True
-    )
+    
 )
 fig.update_layout(template="plotly_dark", title="Peak Performance")
 
