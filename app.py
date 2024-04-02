@@ -51,7 +51,7 @@ import math
 
 #st.plotly_chart(fig)
 
-random_x = [0, 30, 60, 90]
+random_x = np.array([0, 30, 60, 90])
 recovery_y0 = np.array([np.nan, np.nan, 10.66, 12.88])
 nutrition_y1 = np.array([np.nan, np.nan, 12.53, 16.47])
 exercise_y2 = np.array([np.nan, np.nan, 15.47, 21.51])
