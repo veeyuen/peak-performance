@@ -37,7 +37,7 @@ fig = go.Figure(
     layout=go.Layout(
         title=go.layout.Title(text='Peak Performance - XXXX'),
         polar={'radialaxis': {'visible': True}},
-    showlegend=True
+        showlegend=True
     )
 )
 
@@ -46,8 +46,7 @@ polar=dict(
       visible=True,
       range=[1, 10]
     )),
-
-  showlegend=True
+      showlegend=True
 )
 fig.update_layout(template="plotly_dark", title="Peak Performance")
 
