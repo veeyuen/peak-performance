@@ -37,7 +37,7 @@ fig = go.Figure(
     layout=go.Layout(
         title=go.layout.Title(text='Peak Performance - XXXX'),
         polar={'radialaxis': {'visible': True}},
-        showlegend=True
+        showlegend=True,
     )
 )
 
