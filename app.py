@@ -63,17 +63,6 @@ fig.add_trace(
     col=1,
 )
 
-fig.add_trace(
-    go.Scatterpolar(
-        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
-        r=[10,7,6.9],
-        fill='toself',
-        name='Day 30',
-        legend="legend1"
-    ),
-    row=1,
-    col=1,
-)
 
 fig.add_trace(
     go.Scatterpolar(
@@ -86,6 +75,19 @@ fig.add_trace(
     row=1,
     col=1,
 )
+
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
+        r=[10,7,6.9],
+        fill='toself',
+        name='Day 30',
+        legend="legend1"
+    ),
+    row=1,
+    col=1,
+)
+
 
 
 fig.add_trace(
