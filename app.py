@@ -16,11 +16,11 @@ import math
 np.random.seed(1)
 
 N = 100
-random_x = [0, 30, 60, 90]
-recovery_y0 = np.array([np.nan, np.nan, 10.66, 12.88])
-nutrition_y1 = np.array([np.nan, np.nan, 12.53, 16.47])
-exercise_y2 = np.array([np.nan, np.nan, 15.47, 21.51])
-overall_y3 = np.array([np.nan, np.nan, 12.00, 15.32])
+random_x = np.linspace(0, 300, N)
+random_y0 = np.random.randn(N)
+random_y1 = np.random.randn(N)
+random_y2 = np.random.randn(N)
+random_y3 = np.random.randn(N)
 
 
 N = 100
@@ -33,27 +33,24 @@ c = np.sin(2 * np.pi * freq * t + 0.0)
 x_sinwave=t*300
 y_sinwave=c
 
-x_peak = [0, 30, 60]
-y_0 = [1.9, 4, 3, 3, 3, 5.5, 3.5, 1, 3]
-y_30 = [4.15, 6, 5, 10, 7, 6.9, 5.5, 8.8, 5]
-y_60 = [7.8, 9, 8, 10, 10, 8.06, 8, 10, 8]
 
-r1 =[1.9, 4, 3, 3, 3, 5.5, 3.5, 1, 3]
+r1 =[5,6,3,8,5]
 
 fig = make_subplots(
-    rows=3, cols=2,
-    specs=[[{"type": "polar", "rowspan":2, "colspan":2}],
+    rows=4, cols=2,
+    specs=[[{"type": "polar"}, {"type": "polar"}],
            [{"type": "scatter"}, {"type": "scatter"}],
-           [{"type": "scatter"}, {"type": "scatter", "rowspan": 2}]
+           [{"type": "polar"}, {"type": "scatter", "rowspan": 2}],
+           [{"type": "scatter"}, None]
               ],
     horizontal_spacing= 0.20, vertical_spacing= 0.15,
-    row_heights=[0.7, 0.4, 0.4]
+    row_heights=[0.7, 0.3, 0.7, 0.3]
     )
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Energy Levels'],
-        r=y_0,
+        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
+        r=r1,
         fill='toself',
         name='Day 0',
         legend="legend1"
@@ -64,31 +61,65 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Energy Levels'],
-        r=y_30,
+        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
+        r=[4,3,10],
         fill='toself',
-        name='Day 30',
+        name='Day 15',
         legend="legend1"
     ),
     row=1,
     col=1,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
+        r=[5,6,3],
+        fill='toself',
+        name='Day 0',
+        legend="legend2"
+    ),
+    row=1,
+    col=2,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
+        r=[3,9,4],
+        fill='toself',
+        name='Day 15',
+        legend="legend2"
+    ),
+    row=1,
+    col=2,
 )
 
 fig.add_trace(
     go.Scatterpolar(
-        theta=['Activity', 'Strength', 'Stamina', 'Sleep', 'Stress<br>Management', 'Mental Health', 'Cognitive Function', 'Sick Leaves', 'Energy Levels'],
-        r=y_60,
+        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
+        r=[2,5,8],
         fill='toself',
-        name='Day 60',
-        legend="legend1"
+        name='Day 0',
+        legend="legend3"
     ),
-    row=1,
+    row=3,
+    col=1,
+)
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
+        r=[7,3,9],
+        fill='toself',
+        name='Day 15',
+        legend="legend3"
+    ),
+    row=3,
     col=1,
 )
 
+
 fig.add_trace(
     go.Scatter(
-        x=x_sinwave, y=recovery_y0,
+        x=x_sinwave, y=y_sinwave,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -101,7 +132,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=nutrition_y1,
+        x=random_x, y=random_y1,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -113,19 +144,19 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=exercise_y2,
+        x=random_x, y=random_y2,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
         showlegend=False
     ),
-    row=3,
+    row=4,
     col=1,
     )
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=overall_y3,
+        x=random_x, y=random_y3,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='royalblue', width=2),
@@ -169,7 +200,7 @@ fig.update_layout(
     polar=dict(            # first chart y-axis labels
     radialaxis=dict(
       visible=True,
-      range=[1, 10],
+      range=[0, 10],
         tickfont_size = 12,
         color="Yellow"
     )),
@@ -198,10 +229,40 @@ fig.update_layout(
         bgcolor="Black",
         bordercolor="Black",
         borderwidth=1
-    )
+    ),
 
+    legend2=dict(
+        title="NUTRITION",
+        x=0.55,
+        y=1.1,
+        title_font_family="Arial",
+        font=dict(
+            family="Arial",
+            size=10,
+            color="White"
+        ),
+        bgcolor="Black",
+        bordercolor="Black",
+        borderwidth=1
+    ),
 
+    legend3=dict(
+        title="EXERCISE",
+        x=-0.05,
+        y=0.5,
+        title_font_family="Arial",
+        font=dict(
+            family="Arial",
+            size=10,
+            color="White"
+        ),
+        bgcolor="Black",
+        bordercolor="Black",
+        borderwidth=1
+    ),
 
+  showlegend=True
+)
 
 fig.update_polars(
     radialaxis=dict(
@@ -235,4 +296,3 @@ fig.update_yaxes(title_text="Overall<br>Performance", row=3, col=2)
 
 
 st.plotly_chart(fig)
-
