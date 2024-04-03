@@ -30,7 +30,7 @@ freq = 1.0
 c = np.sin(2 * np.pi * freq * t + 0.0)
 d = np.sin(2 * np.pi * -0.5 * t + 0.0)
 e = np.sin(2 * np.pi * 0.25 * t + 0.0)
-f = np.sin(2 * np.pi * 0.35 * t + 0.0)
+f = np.sin(2 * np.pi * 0.30 * t + 0.0)
 
 
 
@@ -164,7 +164,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=x_sinwave, y=y_sinwave,
-        mode='lines',
+        mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
         showlegend=False
@@ -201,7 +201,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatter(
         x=random_x, y=f,
-        mode='lines+markers',
+        mode='lines',
         name='Time (Days)',
         line=dict(color='royalblue', width=2),
         showlegend=False
