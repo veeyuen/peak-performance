@@ -28,7 +28,7 @@ t = np.linspace(0, 1, N)
 freq = 1.0
 
 c = np.sin(2 * np.pi * freq * t + 0.0)
-d = np.sin(2 * np.pi * 0.75 * t + 0.0)
+d = np.sin(2 * np.pi * 0.5 * t + 0.0)
 
 
 x_sinwave=t*300
