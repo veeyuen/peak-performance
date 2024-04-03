@@ -186,7 +186,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=random_y2,
+        x=random_x, y=e,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
