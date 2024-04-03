@@ -28,6 +28,7 @@ t = np.linspace(0, 1, N)
 freq = 1.0
 
 c = np.sin(2 * np.pi * freq * t + 0.0)
+d = np.sin(2 * np.pi * 0.75 * t + 0.0)
 
 
 x_sinwave=t*300
@@ -172,7 +173,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=random_y1,
+        x=random_x, y=d,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
