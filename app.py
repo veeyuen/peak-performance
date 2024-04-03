@@ -29,6 +29,7 @@ freq = 1.0
 
 c = np.sin(2 * np.pi * freq * t + 0.0)
 d = np.sin(2 * np.pi * -0.5 * t + 0.0)
+e = np.sin(2 * np.pi * 0.25 * t + 0.0)
 
 
 x_sinwave=t*300
