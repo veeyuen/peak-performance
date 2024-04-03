@@ -34,7 +34,7 @@ x_sinwave=t*300
 y_sinwave=c
 
 
-r1 =[5,6,3,8,5]
+r1 =[3,3,5.5]
 
 fig = make_subplots(
     rows=4, cols=2,
@@ -62,7 +62,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
-        r=[4,3,10],
+        r=[10,7,6.9],
         fill='toself',
         name='Day 30',
         legend="legend1"
@@ -73,7 +73,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
-        r=[5,6,3],
+        r=[3.5,1,3],
         fill='toself',
         name='Day 0',
         legend="legend2"
@@ -84,7 +84,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
-        r=[3,9,4],
+        r=[5.5,8.8,5],
         fill='toself',
         name='Day 30',
         legend="legend2"
@@ -96,7 +96,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
-        r=[2,5,8],
+        r=[1.9,4.4,3],
         fill='toself',
         name='Day 0',
         legend="legend3"
@@ -107,7 +107,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
-        r=[7,3,9],
+        r=[4.15,6,5],
         fill='toself',
         name='Day 30',
         legend="legend3"
