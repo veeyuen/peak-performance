@@ -64,7 +64,7 @@ fig.add_trace(
         theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
         r=[4,3,10],
         fill='toself',
-        name='Day 15',
+        name='Day 30',
         legend="legend1"
     ),
     row=1,
@@ -86,7 +86,7 @@ fig.add_trace(
         theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
         r=[3,9,4],
         fill='toself',
-        name='Day 15',
+        name='Day 30',
         legend="legend2"
     ),
     row=1,
@@ -109,7 +109,7 @@ fig.add_trace(
         theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
         r=[7,3,9],
         fill='toself',
-        name='Day 15',
+        name='Day 30',
         legend="legend3"
     ),
     row=3,
