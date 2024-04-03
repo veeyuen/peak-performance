@@ -109,6 +109,19 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatterpolar(
+        theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
+        r=[8,10,8],
+        fill='toself',
+        name='Day 60',
+        legend="legend2"
+    ),
+    row=1,
+    col=2,
+)
+
+
+fig.add_trace(
+    go.Scatterpolar(
         theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
         r=[1.9,4.4,3],
         fill='toself',
