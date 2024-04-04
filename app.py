@@ -166,9 +166,6 @@ fig.add_trace(
 
 
 
-
-
-
 fig.add_trace(
     go.Scatter(
         x=x_sinwave, y=y_sinwave,
@@ -299,7 +296,7 @@ fig.update_layout(
     ),
 
     legend3=dict(
-        title="EXERCISE",
+        title="TRAINING",
         x=-0.05,
         y=0.5,
         title_font_family="Arial",
