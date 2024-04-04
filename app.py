@@ -31,6 +31,9 @@ y_nutrition = np.array([np.nan, np.nan, 12.53, 16.47])
 x_training = np.array([0, 30, 60, 90])
 y_training = np.array([np.nan, np.nan, 15.47, 21.51])
 
+x_overall = np.array([0, 30, 60, 90])
+y_overall = np.array([np.nan, np.nan, 12.00, 15.32])
+
 
 N = 10
 t = np.linspace(0, 1, N)
@@ -214,7 +217,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=f,
+        x=x_overall, y=y_overall,
         mode='lines',
         name='Time (Days)',
         line=dict(color='royalblue', width=2),
