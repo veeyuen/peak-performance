@@ -25,6 +25,12 @@ random_y3 = np.random.randn(N)
 x_recovery = np.array([0, 30, 60, 90])
 y_recovery = np.array([np.nan, np.nan, 10.66, 12.88])
 
+x_nutrition = np.array([0, 30, 60, 90])
+y_nutrition = np.array([np.nan, np.nan, 12.53, 16.47])
+
+x_training = np.array([0, 30, 60, 90])
+y_training = np.array([np.nan, np.nan, 15.47, 21.51])
+
 
 N = 10
 t = np.linspace(0, 1, N)
@@ -184,7 +190,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=d,
+        x=x_nutrition, y=y_nutrition,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
@@ -196,7 +202,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=random_x, y=e,
+        x=x_training, y=y_training,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
