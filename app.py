@@ -318,9 +318,12 @@ fig.update_layout(
 
 fig.update_polars(
     radialaxis=dict(
-        angle=45
+        angle=45,
+        range=[1, 10]
     )
 )
+
+#fig.update_polars(radialaxis=dict(range=[0, 1]))
 
 fig.update_xaxes(title_text="Days", row=2, col=1)
 fig.update_yaxes(title_text="Recovery<br>Activity", row=2, col=1)
