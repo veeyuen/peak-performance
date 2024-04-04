@@ -22,7 +22,8 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N)
 random_y3 = np.random.randn(N)
 
-x=np.array([0, 30, 60])
+x = np.array([0, 30, 60])
+y = np.array([np.nan, np.nan, 10.66, 12.88])
 
 
 N = 10
