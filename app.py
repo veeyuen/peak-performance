@@ -22,8 +22,8 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N)
 random_y3 = np.random.randn(N)
 
-x = np.array([0, 30, 60, 90])
-y = np.array([np.nan, np.nan, 10.66, 12.88])
+x_recovery = np.array([0, 30, 60, 90])
+y_recovery = np.array([np.nan, np.nan, 10.66, 12.88])
 
 
 N = 10
@@ -171,7 +171,7 @@ fig.add_trace(
 
 fig.add_trace(
     go.Scatter(
-        x=x, y=y,
+        x=x_recovery, y=y_recovery,
         mode='lines+markers',
         name='Time (Days)',
         line=dict(color='orange', width=2),
