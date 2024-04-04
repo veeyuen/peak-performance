@@ -22,6 +22,8 @@ random_y1 = np.random.randn(N)
 random_y2 = np.random.randn(N)
 random_y3 = np.random.randn(N)
 
+x=np.array([0, 30, 60])
+
 
 N = 10
 t = np.linspace(0, 1, N)
