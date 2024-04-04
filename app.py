@@ -63,17 +63,6 @@ fig = make_subplots(
     row_heights=[0.7, 0.3, 0.7, 0.3]
     )
 
-fig.add_trace(
-    go.Scatterpolar(
-        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
-        r=r1,
-        fill='toself',
-        name='Day 0',
-        legend="legend1"
-    ),
-    row=1,
-    col=1,
-)
 
 
 fig.add_trace(
@@ -100,7 +89,33 @@ fig.add_trace(
     col=1,
 )
 
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
+        r=r1,
+        fill='toself',
+        name='Day 0',
+        legend="legend1"
+    ),
+    row=1,
+    col=1,
+)
 
+
+
+
+
+fig.add_trace(
+    go.Scatterpolar(
+        theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
+        r=[8,10,8],
+        fill='toself',
+        name='Day 60',
+        legend="legend2"
+    ),
+    row=1,
+    col=2,
+)
 
 fig.add_trace(
     go.Scatterpolar(
@@ -114,17 +129,6 @@ fig.add_trace(
     col=2,
 )
 
-fig.add_trace(
-    go.Scatterpolar(
-        theta=["<b>Cognitive<br>Function<b>", "<b>Sick<br>Leaves<b>", "<b>Energy<br>Levels<b>"],
-        r=[8,10,8],
-        fill='toself',
-        name='Day 60',
-        legend="legend2"
-    ),
-    row=1,
-    col=2,
-)
 
 fig.add_trace(
     go.Scatterpolar(
