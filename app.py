@@ -35,20 +35,6 @@ x_overall = np.array([0, 30, 60, 90])
 y_overall = np.array([3.2, 7.5, 9.16, 9.66])
 
 
-N = 10
-t = np.linspace(0, 1, N)
-freq = 1.0
-
-c = np.sin(2 * np.pi * freq * t + 0.0)
-d = np.sin(2 * np.pi * -0.23 * t + 0.0)
-e = np.sin(2 * np.pi * 0.25 * t + 0.0)
-f = np.sin(2 * np.pi * 0.9 * t + 0.0)
-
-
-
-x_sinwave=t*300
-y_sinwave=c
-
 
 r1 =[3,3,5.5]
 
