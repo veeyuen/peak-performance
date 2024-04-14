@@ -238,12 +238,12 @@ fig.update_layout(
     margin=dict(l=10, r=78),
 
 
-    title={
-        'text': "Peak Performance",
-        'y':0.9,
-        'x':0.2,
-        'xanchor': 'center',
-        'yanchor': 'top'},
+    #title={
+    #    'text': "Peak Performance",
+    #    'y':0.9,
+    #    'x':0.2,
+    #    'xanchor': 'center',
+    #    'yanchor': 'top'},
 
     title_font_family="Times New Roman",
     title_font_color="black",
