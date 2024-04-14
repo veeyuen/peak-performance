@@ -54,7 +54,7 @@ fig = make_subplots(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Sleep<br>Quality<b>", "<b>Stress<br>Management<b>", "<b>Mental<br>Health<b>"],
-        r=[7.8,9,8],
+        r=[10,10,8.06],
         fill='toself',
         name='Day 60',
         legend="legend1"
