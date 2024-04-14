@@ -157,7 +157,7 @@ fig.add_trace(
 fig.add_trace(
     go.Scatterpolar(
         theta=["<b>Activity<br>Level<b>", "<b>Strength<br>Level<b>", "<b>Stamina<b>"],
-        r=[1.9,4.4,3],
+        r=[1.9,4,3],
         fill='toself',
         name='Day 0',
         legend="legend3"
