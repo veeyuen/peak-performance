@@ -23,16 +23,16 @@ random_y2 = np.random.randn(N)
 random_y3 = np.random.randn(N)
 
 x_recovery = np.array([0, 30, 60, 90])
-y_recovery = np.array([np.nan, np.nan, 10.66, 12.88])
+y_recovery = np.array([3.64, 8.47, 9.52, 9.59])
 
 x_nutrition = np.array([0, 30, 60, 90])
-y_nutrition = np.array([np.nan, np.nan, 12.53, 16.47])
+y_nutrition = np.array([2.12, ,7.02, 9.00, 9.875])
 
 x_training = np.array([0, 30, 60, 90])
-y_training = np.array([np.nan, np.nan, 15.47, 21.51])
+y_training = np.array([2.96, 5.05, 8.26, 9.67])
 
 x_overall = np.array([0, 30, 60, 90])
-y_overall = np.array([np.nan, np.nan, 12.00, 15.32])
+y_overall = np.array([3.2, 7.5, 9.16, 9.66])
 
 
 N = 10
