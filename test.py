@@ -18,10 +18,21 @@ r1 =[3,3,5.5]
 
 fig = make_subplots(
     rows=1, cols=3,
-    specs=[[{"type": "polar"}, {"type": "polar"}, {"type": "polar"}]],
+    specs=[
+        [{"type": "polar"}, {"type": "polar"}, {"type": "polar"}]
+          ],
     horizontal_spacing= 0.20, vertical_spacing= 0.15,
     row_heights=[0.7, 0.7, 0.7]
     )
+
+#fig = make_subplots(
+#    rows=2, cols=2,
+#    specs=[[{"type": "polar"}, {"type": "polar"}],
+#           [{"type": "polar"}, None]
+#              ],
+#    horizontal_spacing= 0.20, vertical_spacing= 0.15,
+#    row_heights=[0.7, 0.7]
+#    )
 
 
 
@@ -148,8 +159,8 @@ fig.update_layout(
     autosize=False,
 #    minreducedwidth=350,
 #    minreducedheight=350,
-    width=1150,
-    height=1500,
+    width=700,
+    height=750,
 #    title_text = 'PEAK PERFORMANCE',
 
     font=dict(
