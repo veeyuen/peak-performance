@@ -210,7 +210,7 @@ fig.update_layout(
         title_font_family="Arial",
         font=dict(
             family="Arial",
-            size=7,
+            size=6,
             color="White"
         ),
         bgcolor="Black",
