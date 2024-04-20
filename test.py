@@ -165,13 +165,13 @@ fig.update_layout(
 
     font=dict(
         family="Courier New, monospace",
-        size=12,  # Set the font size here
+        size=10,  # Set the font size here
         color="White"
     ),
 
     title_xref="paper",
 
-    margin=dict(l=10, r=78),
+    margin=dict(l=10, r=78, t=5, b=5),
 
 
     #title={
