@@ -165,7 +165,7 @@ fig.update_layout(
 
     font=dict(
         family="Courier New, monospace",
-        size=10,  # Set the font size here
+        size=9,  # Set the font size here
         color="White"
     ),
 
@@ -188,7 +188,7 @@ fig.update_layout(
     radialaxis=dict(
       visible=True,
       range=[0, 10],
-        tickfont_size = 10,
+        tickfont_size = 9,
         color="Yellow"
     )),
 
@@ -196,7 +196,7 @@ fig.update_layout(
     radialaxis=dict(
       visible=True,
       range=[0, 10],
-        tickfont_size = 10,
+        tickfont_size = 9,
         color="Yellow"
     )),
 
@@ -210,7 +210,7 @@ fig.update_layout(
         title_font_family="Arial",
         font=dict(
             family="Arial",
-            size=10,
+            size=9,
             color="White"
         ),
         bgcolor="Black",
@@ -225,7 +225,7 @@ fig.update_layout(
         title_font_family="Arial",
         font=dict(
             family="Arial",
-            size=10,
+            size=9,
             color="White"
         ),
         bgcolor="Black",
@@ -240,7 +240,7 @@ fig.update_layout(
         title_font_family="Arial",
         font=dict(
             family="Arial",
-            size=10,
+            size=9,
             color="White"
         ),
         bgcolor="Black",
