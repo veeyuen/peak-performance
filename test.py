@@ -188,7 +188,7 @@ fig.update_layout(
     radialaxis=dict(
       visible=True,
       range=[0, 10],
-        tickfont_size = 12,
+        tickfont_size = 10,
         color="Yellow"
     )),
 
@@ -196,7 +196,7 @@ fig.update_layout(
     radialaxis=dict(
       visible=True,
       range=[0, 10],
-        tickfont_size = 12,
+        tickfont_size = 10,
         color="Yellow"
     )),
 
