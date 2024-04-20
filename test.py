@@ -221,7 +221,7 @@ fig.update_layout(
     legend2=dict(
         title="NUTRITION",
         x=0.55,
-        y=0.95,
+        y=0.90,
         title_font_family="Arial",
         font=dict(
             family="Arial",
@@ -235,7 +235,7 @@ fig.update_layout(
 
     legend3=dict(
         title="TRAINING",
-        x=-0.05,
+        x=0.75,
         y=0.5,
         title_font_family="Arial",
         font=dict(
