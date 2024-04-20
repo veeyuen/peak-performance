@@ -22,7 +22,7 @@ fig = make_subplots(
         [{"type": "polar"}, {"type": "polar"}, {"type": "polar"}]
           ],
     horizontal_spacing= 0.20, vertical_spacing= 0.15,
-    row_heights=[0.7, 0.7, 0.7]
+    row_heights=[0.7]
     )
 
 #fig = make_subplots(
