@@ -122,8 +122,8 @@ fig.add_trace(
         name='Day 60',
         legend="legend3"
     ),
-    row=2,
-    col=1,
+    row=1,
+    col=3,
 )
 
 fig.add_trace(
@@ -134,8 +134,8 @@ fig.add_trace(
         name='Day 30',
         legend="legend3"
     ),
-    row=2,
-    col=1,
+    row=1,
+    col=3,
 )
 
 
@@ -147,8 +147,8 @@ fig.add_trace(
         name='Day 0',
         legend="legend3"
     ),
-    row=2,
-    col=1,
+    row=1,
+    col=3,
 )
 
 
