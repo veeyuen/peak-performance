@@ -159,7 +159,7 @@ fig.update_layout(
     autosize=False,
 #    minreducedwidth=350,
 #    minreducedheight=350,
-    width=950,
+    width=650,
     height=600,
 #    title_text = 'PEAK PERFORMANCE',
 
@@ -171,7 +171,7 @@ fig.update_layout(
 
     title_xref="paper",
 
-    margin=dict(l=0, r=0, t=5, b=5, pad=0),
+    margin=dict(l=0, r=115, t=5, b=5, pad=0),
 
 
     #title={
