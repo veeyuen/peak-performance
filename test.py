@@ -169,7 +169,7 @@ fig.update_layout(
         color="White"
     ),
 
-    title_xref="paper",
+ #   title_xref="paper",
 
     margin=dict(l=0, r=100, t=5, b=5),
 
