@@ -159,7 +159,7 @@ fig.update_layout(
     autosize=False,
 #    minreducedwidth=350,
 #    minreducedheight=350,
-    width=850,
+    width=870,
     height=600,
 #    title_text = 'PEAK PERFORMANCE',
 
