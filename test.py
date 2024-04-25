@@ -165,7 +165,7 @@ fig.update_layout(
 
     font=dict(
         family="Courier New, monospace",
-        size=10,  # Set the font size here
+        size=9,  # Set the font size here
         color="White"
     ),
 
